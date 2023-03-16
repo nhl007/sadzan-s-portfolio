@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * @license
+ *
+ * Font Family: Clash Grotesk
+ * Designed by: Indian Type Foundry
+ * URL: https://www.fontshare.com/fonts/clash-grotesk
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Clash Grotesk Variable(Variable font)
+ * Clash Grotesk Extralight
+ * Clash Grotesk Light
+ * Clash Grotesk Regular
+ * Clash Grotesk Medium
+ * Clash Grotesk Semibold
+ * Clash Grotesk Bold
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: 'ClashGrotesk-Variable';
+  src: url('./assets/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Variable.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Light';
+  src: url('./assets/fonts/ClashGrotesk-Light.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Light.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Regular';
+  src: url('./assets/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Regular.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Medium';
+  src: url('./assets/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Medium.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Semibold';
+  src: url('./assets/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Semibold.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Bold';
+  src: url('./assets/fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+    url('./assets/fonts/ClashGrotesk-Bold.woff') format('woff'),
+    url('./assets/fonts/ClashGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* @media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+} */
+
+body {
+  font-size: 1.6rem;
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 19.68px;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.__hero_background {
+  background: rgba(11, 14, 16, 0.5);
+  backdrop-filter: blur(5px);
+}
+.__hero_background_secondary {
+  background: #ff3465;
+  filter: blur(150px);
+}
+.__hero_background_top_right {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset -10px -10px 20px rgba(255, 255, 255, 0.05),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.__hero__small {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset -10px -10px 20px rgba(255, 255, 255, 0.05),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+}
+
+.__rounded_animated_profile {
+  box-shadow: inset -10px -10px 20px rgba(255, 255, 255, 0.25),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.__shared__layout__border {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.__page__lay__rect {
+  /* background: rgba(97, 97, 97, 0.5);
+  box-shadow: inset 0px 4px 30px rgba(255, 255, 255, 0.25); */
+  border-radius: 15px;
+  /* transform: rotate3d(0, 1, 0, -20deg); */
+}
+
+/* // */
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  /* -webkit-border-radius: 1ex; */
+}
+
+::-webkit-scrollbar-corner {
+  background: pink;
+}
+
+.scroll__parent {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll__parent > section {
+  scroll-snap-align: start;
+}
